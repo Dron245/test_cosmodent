@@ -7,6 +7,47 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
+				<section class="page__prices prices">
+					<div class="prices__container">
+						<h2 class="prices__title title">Цены</h2>
+						<div data-spollers class="prices__spollers spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">
+									<span>Консультация стоматолога</span>
+									<div class="spollers__arrow"><img src="@img/main/arrow-down-prises.svg" alt=""></div>
+								</button>
+								<div class="spollers__body">
+									<h3 class="spollers__subtitle">Длительность <span>до 60 минут</span></h3>
+									<div class="spollers__content">
+										<p class="spollers__text">Специалисты стараются обеспечить все условия для зубосохранения. Удаление — это крайняя мера, когда уже нет никакой возможности сохранить зуб. Чтобы минимизировать риски и избежать удаления, посещайте специалистов вовремя. <br>
+											Благодаря использованию современных анестетиков удаление зубов проходит безболезненно и в комфортной обстановке.
+										</p>
+										<div class="spollers__img">
+											<img src="@img/main/123.jpg" alt="Графическое описание">
+										</div>
+										<div class="spollers__prises">
+											<div class="spollers__prise">
+												<span class="spollers__prisetext">Удаление постоянного зуба (простое / сложное)</span>
+												<div class="spollers__line"></div>
+												<span class="spollers__prisedeg">от 1 900 до 3 300 ₽</span>
+											</div>
+											<div class="spollers__prise">
+												<span class="spollers__prisetext">Удаление зуба мудрости (ретинированного/дистопированного зуба)</span>
+												<div class="spollers__line"></div>
+												<span class="spollers__prisedeg">7150 ₽</span>
+											</div>
+											<div class="spollers__prise">
+												<span class="spollers__prisetext">Удаление временного зуба</span>
+												<div class="spollers__line"></div>
+												<span class="spollers__prisedeg">1500 ₽</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>

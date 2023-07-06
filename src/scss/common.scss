@@ -1,1 +1,20 @@
 // Заголовки, общие БЄМ блоки и проче...
+.title {
+	position: relative;
+	//font-family: var(--font-family);
+	display: inline-flex;
+	font-weight: 600;
+	font-size: 52px;
+	color: #000;
+	&::after{
+		content:'';
+		position: absolute;
+		bottom: 0;
+		left: 100%;
+		border-radius: 0px 5px 5px 0px;
+		width: 100px;
+		height: 8px;
+		background: #004dc0;
+		margin-left: 10px;
+	}
+}
