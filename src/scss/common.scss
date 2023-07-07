@@ -4,7 +4,7 @@
 	//font-family: var(--font-family);
 	display: inline-flex;
 	font-weight: 600;
-	font-size: 52px;
+	@include adaptiveValue("font-size", 52, 32,1600,768,1);
 	color: #000;
 	&::after{
 		content:'';
@@ -17,4 +17,19 @@
 		background: #004dc0;
 		margin-left: 10px;
 	}
+}
+
+.button {
+	padding: 20px 30px;
+	width: 208px;
+		box-shadow: 0px 10px 20px 0px rgba(0, 160, 227, 0.3);
+		background: linear-gradient(180deg, #00a0e3 0%, #004dc0 100%);
+		font-weight: 600;
+		font-size: 16px;
+		color: #fff;
+		border-radius: 35px;
+		@media (max-width:$mobile){
+			 padding: 12px 20px;
+			 font-size: 12px; 
+		}
 }

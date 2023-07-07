@@ -1,5 +1,5 @@
 .page {
-
+	background: #f5f5f5;
 	&__prices {
 	}
 }
@@ -8,6 +8,10 @@
 .prices {
 
 	&__container {
+		margin-top: 68px;
+		@media (max-width:$mobile){
+			 margin-top: 35px; 
+		}
 	}
 
 	&__title {
@@ -26,6 +30,14 @@
 	&__item {
 		border: 1px solid #004dc0;
 		border-radius: 20px;
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+		@media (max-width:$mobile){
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	&__title {
@@ -34,15 +46,33 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 23px;
+		@media (max-width:$mobile){
+			 padding-top: 18px;
+			 padding-bottom: 18px; 
+		}
+		&._spoller-active .spollers__arrow {
+			background-color: #fff;
+			& svg {
+				& path {
+					stroke: #004dc0;
+				}
+				transform: rotate(180deg);
+			}
+		}
 		span {
 			//font-family: var(--font-family);
 			font-weight: 600;
 			font-size: rem(29);
 			//color: #004dc0;
+			@media (max-width:$mobile){
+				 font-size: rem(18); 
+				 text-align: left;
+			}
 		}
 	}
 
 	&__arrow {
+		
 		border: 1px solid $mainColor;
 		border-radius: 100%;
 		background-color: $mainColor;
@@ -51,40 +81,275 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		img {
+		transition: all 0.5s;
+		@media (max-width:$mobile){
+			  flex: 0 0 33px;
+		}
+		svg {
 			transition: transform 0.5s;
 		}
 	}
 
 	&__body {
+		padding: 0px 90px 45px 23px;
+		color: #000;
+		@media (max-width:$tablet){
+			padding-right: 45px;
+		}
+		@media (max-width:$mobile){
+			 padding: 0px 20px 30px 15px; 
+		}
 	}
 
 	&__subtitle {
+		display: flex;
+		align-items: center;
+		
+		@media (max-width:$mobile){
+			  font-size: rem(14);
+		}
+		//padding-left: 48px;
+		&::before{
+			content:'';
+			width: 35px;
+			height: 35px;
+			margin-right: 13px;
+			background: url('@img/main/time.svg') 0 0 no-repeat;
+		}
+		span {
+			font-weight: 600;
+		}
+		line-height: math.div(26 , 16);
 	}
 
 	&__content {
+		padding-left: 48px;
+		margin-top: 27px;
+		display: grid;
+		grid-template-columns: 58.6% 1fr;
+		grid-template-rows: 1fr auto;
+		gap: 45px;
+		@media (max-width:$tablet){
+			grid-template-columns: 1fr;
+			column-gap: 0;
+			grid-auto-flow: column;
+			grid-template-rows: repeat(3, auto);
+			padding-left: 0;
+		}
 	}
 
 	&__text {
+		line-height: math.div(26 , 16);
+		@media (max-width:$mobile){
+			 font-size: rem(14); 
+		}
 	}
 
 	&__img {
+		padding-bottom: percent(337,551);
+		@media (max-width:$tablet){
+			width: 100%;
+		}
+		img {
+			object-fit: contain;
+		}
 	}
 
 	&__prises {
+		grid-column: span 2;
+		color: #004dc0;
+		font-size: 20px;
 	}
 
 	&__prise {
+		display: flex;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		@media (max-width:em(1070)){
+			font-size: rem(16);
+			align-items: flex-end;
+		}
+		@media (max-width:$mobile){
+			 font-size: rem(12); 
+		}
 	}
 
 	&__prisetext {
+		
 	}
 
 	&__line {
+		margin: 0px 10px;
+		height: 2px;
+		flex: 1 0 auto;
+		background-color: #d9d9d9;
+		align-self: flex-end;
+		min-width: 20px;
 	}
 
 	&__prisedeg {
+		color: #000;
+		font-weight: 700;
+		@media (max-width:$tablet){
+			font-size: rem(14);
+			white-space: nowrap;
+		}
+		@media (max-width:$mobile){
+			 font-size: rem(12); 
+		}
 	}
 }
 
-//====================================================================================================
+//======RECORD==============================================================================================
+
+.page {
+	&__record {
+		position: relative;
+		background-color: #9ED5FE;
+		//background: linear-gradient(90deg, rgba(255, 255, 255, 0.80) 23.44%, rgba(255, 255, 255, 0.00) 79.17%);;
+		background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 23.44%, rgba(255, 255, 255, 0) 79.17%);
+		svg {
+			position: absolute;
+			top: 0;
+			//stroke: red;
+			z-index: 2;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+.record {
+
+	&__container {
+		padding-top: 261px;
+		display: flex;
+		@media (max-width:$tablet){
+			display: block;
+		}
+	}
+
+	&__content {
+		margin-right: 146px;
+		flex: 0 0 percent(772,1600);
+		display: flex;
+		flex-direction: column;
+		row-gap: 38px;
+		@media (max-width:$tablet){
+			margin-right: 0;
+		}
+	}
+
+	&__title {
+		align-self: flex-start;
+	}
+
+	&__text {
+		
+		color: #000;
+		@include adaptiveValue("font-size", 26, 16,1600,320,1);
+		line-height: math.div(36 , 26);
+		a {
+			color: #004dc0;
+		}
+		&_bottom {
+			padding-block: 20px;
+			font-size: rem(14);
+		}
+	}
+
+	&__form {
+	}
+
+	&__input {
+		padding: 10px 10px 10px 60px;
+		font-size: rem(18);
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		
+		&:nth-child(1) {
+			background: url('@img/main/record/human.svg') white 20px center no-repeat;
+		}
+		&:nth-child(2) {
+			background: url('@img/main/record/phone.svg') white 20px center no-repeat;
+		}
+		&:nth-child(3) {
+			background: url('@img/main/record/mail.svg') white 20px center no-repeat;
+		}
+		//background-color: #fff;
+	}
+
+	&__button {
+	}
+
+	&__img {
+		@media (max-width:$tablet){
+			margin-top: 20px;
+			text-align: center;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+/*=======CONTACTS=====*/
+
+.page__contacts {
+	position: relative;
+}
+.contacts {
+	& svg {
+		position: absolute;
+		//top: 0;
+		//stroke: red;
+		z-index: 2;
+		width: 100%;
+		height: auto;
+		//height: 250px;
+		@media (max-width:$mobile){
+			 //height: 500px; 
+		}
+	}
+	&__bg1 {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 50%;
+		background-color: #9ED5FE;
+		//background: linear-gradient(90deg, rgba(255, 255, 255, 0.80) 23.44%, rgba(255, 255, 255, 0.00) 79.17%);;
+		background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 23.44%, rgba(255, 255, 255, 0) 79.17%);
+	}
+
+	&__bg2 {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 50%;
+		background: #004dc0;
+	}
+
+	&__content {
+		position: relative;
+		//padding-top: 50px;
+		z-index: 3;
+		//width: 150px;
+		@include adaptiveValue("height", 769, 130,1920,320,1);
+	}
+
+	&__container {
+		
+	}
+
+	&__title {
+		@include adaptiveValue("margin-top", 121, 40,1600,768,1);
+	}
+}
+	
+
+
+
