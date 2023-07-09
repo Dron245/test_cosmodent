@@ -359,18 +359,6 @@
 		}
 	}
 
-	&__container {
-		
-	}
-
-	&__title {
-		
-	}
-
-	&__tel-img {
-		//display: inline-block;
-	}
-
 	&__tel-text {
 		display: flex;
 		flex-direction: column
@@ -398,10 +386,6 @@
 			width: 100%;
 
 		}
-	}
-
-	&__container {
-		
 	}
 	
 	&__body {
@@ -434,8 +418,6 @@
 	 }
 	}
 
-	&__button {
-	}
 
 	&__map-wrapper {
 		width: 100%;
@@ -453,10 +435,7 @@
 	 @media (max-width:$tablet){
 		 width: 100%; 
 	 }
-		// img {
-		// 	width: 100%;
-		// 	height: auto;
-		// }
+	
 		iframe {
 			position: absolute;
     top: 0;
@@ -468,11 +447,3 @@
 		}
 	}
 }
-
-
-
-
-	
-
-
-
