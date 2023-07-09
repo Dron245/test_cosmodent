@@ -205,9 +205,6 @@
 					</div>
 				</section>
 				<section class="page__record record">
-					<svg width="1920" height="291" viewBox="0 0 1920 291" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M961.999 200.999C1659.56 275.263 1920 152.5 1920 152.5L1920 0.000926018L-0.000366211 0L-0.000610352 290.499C-0.000610352 290.499 330.241 133.741 961.999 200.999Z" fill="#f5f5f5"/>
-						</svg>
 					<div class="record__container">
 						<div class="record__content">
 							<h3 class="record__title title">Запись на приём</h3>
@@ -237,25 +234,22 @@
 					</div>
 				</section>
 				<section class="page__contacts contacts">
-					<div class="contacts__bg1"></div>
-					<div class="contacts__bg2"></div>
-					<svg width="1920" height="769" viewBox="0 0 1920 769" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M962 55.5C1663.5 55.5 1924.5 128.5 1924.5 128.5V218H0V0C0 0 270 55.5 962 55.5Z" fill="#eef7f9"/>
-						<path d="M958 679.654C260.443 753.79 0 631.237 0 631.237L4.72343e-06 479.001L1920 479L1920 769C1920 769 1589.76 612.511 958 679.654Z" fill="#eef7f9"/>
-						<path d="M0 218L1920 218L1920 479L4.72343e-06 479.001L0 218Z" fill="#eef7f9"/>
-					</svg>
-					<div class="contacts__content">
-						<div class="contacts__bottom">
-							<div class="contacts__left">
-								<div class="contacts__container">
-									<div class="contacts__wrapper">
-									<h2 class="contacts__title title">Наши контакты</h2>
-									<div class="actions-header__tel">
-										<span class="actions-header__text">Единый номер</span>
-										<a href="tel:+74912272008" class="actions-header__link-tel">+7 (4912) 27-20-08</a>
-										<span class="actions-header__text actions-header__text_gray">08:00- 21:00</span>
+					<div class="contacts__wrapper">
+						<div class="contacts__left">
+							<div class="contacts__content">
+								<h2 class="contacts__title title">Наши контакты</h2>
+								<div class="contacts__body">
+									<div class="actions-header__phone">
+										<div class="contacts__tel-img actions-header__img">
+											<img src="@img/header/tel.svg" alt="телефон">
+										</div>
+										<div class="contacts__tel-text actions-header__tel">
+											<span class="actions-header__text">Единый номер</span>
+											<a href="tel:+74912272008" class="actions-header__link-tel">+7 (4912) 27-20-08</a>
+											<span class="actions-header__text actions-header__text_gray">08:00- 21:00</span>
+										</div>
 									</div>
-									<div class="actions-header__social">
+									<div class="contacts__social actions-header__social">
 										<a href="#" class="actions-header__socitem">
 											<img src="@img/header/vk.svg" alt="В контакте">
 										</a>
@@ -269,25 +263,17 @@
 											<img src="@img/header/telegramm.svg" alt="telegramm">
 										</a>
 									</div>
-								<button type="button" class="contacts__button button">
-									Запись на приём
-								</button>
-							</div>
-							</div>
-							</div>
-							<div class="contacts__right">
-								<img src="@img/main/contacts/Group 31.png" alt="">
+									<button type="button" class="contacts__button button">Запись на приём</button>
+								
+								</div>
 							</div>
 						</div>
+						<div class="contacts__map">
+							<div class="contacts__map-wrapper">
+								<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A71e3da0ece3186512c8ae69fcf7732e7bfcfb9f2b16cf7559d922234d2722b16&amp;source=constructor" width="600" height="450" frameborder="0"></iframe>
+							</div>
 						</div>
 					</div>
-				</section>
-				<section class="foot">
-					<!-- <svg width="1920" height="769" viewBox="0 0 1920 769" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M962 55.5C1663.5 55.5 1924.5 128.5 1924.5 128.5V218H0V0C0 0 270 55.5 962 55.5Z" fill="#EEF7F9"/>
-						<path d="M958 679.654C260.443 753.79 0 631.237 0 631.237L4.72343e-06 479.001L1920 479L1920 769C1920 769 1589.76 612.511 958 679.654Z" fill="#EEF7F9"/>
-						<path d="M0 218L1920 218L1920 479L4.72343e-06 479.001L0 218Z" fill="#EEF7F9"/>
-					</svg> -->
 				</section>
 			</main>
 			@@include('html/_footer.htm',{})

@@ -1,7 +1,18 @@
 //====================================================================================================
 .footer {
-	background-color: #004dc0;
+	background-color: #026ab6;
 	padding-bottom: 40px;
+	position: relative;
+	&::before{
+		content:'';
+		z-index: 3;
+		background: url('@img/footer/before.svg') 0 0 / cover no-repeat;
+		position: absolute;
+    bottom: 99.5%;
+    left: 0;
+    width: 100%;
+    height: 7.5vw;
+	}
 	&__container {
 		
 	}
