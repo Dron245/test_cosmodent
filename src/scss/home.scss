@@ -359,7 +359,7 @@
 		}
 	}
 
-	&__tel-text {
+	&__tel-text.actions-header__tel{
 		display: flex;
 		flex-direction: column
 	}
