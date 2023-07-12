@@ -1,0 +1,79 @@
+<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__items">
+					<div class="footer__item">
+						<div class="footer__logo-item logo-item">
+							<div class="logo-item__img">
+								<picture><source srcset="img/footer/logo-f.webp" type="image/webp"><img src="img/footer/logo-f.png" alt="Лого"></picture>
+							</div>
+							<p class="logo-item__text">Все права защищены © ООО «Космодент», 2018-2022</p>
+							<a href="#" class="logo-item__link">Лицензия</a>
+						</div>
+						<nav class="footer__nav nav-footer">
+							<ul class="nav-footer__list">
+								<li class="nav-footer__item menu__item"><a href="" class="menu__link">О клиннике</a></li>
+								<li class="nav-footer__item menu__item"><a href="" class="menu__link">Услуги</a></li>
+								<li class="nav-footer__item menu__item"><a href="#" class="menu__link">Врачи</a></li>
+								<li class="nav-footer__item menu__item"><a href="#" class="menu__link">Фото работ</a></li>
+								<li class="nav-footer__item menu__item"><a href="#" class="menu__link">Статьи</a></li>
+								<li class="nav-footer__item menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+								<li class="nav-footer__item menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__item">
+						<div class="footer__text-item">
+							<p class="text-item__text">Возможны противопоказания к применению. <br>Необходима консультация врача.</p>
+							<p class="text-item__text"><a href="#" class="text-item__link">Политика конфиденциальности</a></p>
+							<p class="text-item__text">Этот сайт защищен reCAPTCHA, и применяются <a href="#">Политика конфиденциальности</a> и <a href="#">Условия использования Google</a></p>
+						</div>
+						<div class="footer__counter-item">
+							<div class="counter-item__part">
+								<div class="counter-item__wrapper">
+									<span class="counter-item__title">Принимаем к оплате</span>
+									<div class="counter-item__images">
+										<div class="counter-item__img">
+											<img src="img/footer/mastercard 1.svg" alt="mastercard">
+										</div>
+										<div class="counter-item__img">
+											<img src="img/footer/visa 1.svg" alt="visa">
+										</div>
+										<div class="counter-item__img">
+											<img src="img/footer/mir-logo 1.svg" alt="МИР">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="counter-item__part">
+								<div class="counter-item__img">
+									<img src="img/footer/counter.svg" alt="Counter">
+								</div>
+							</div>
+							<div class="counter-item__part">
+								<div class="counter-item__studiodev studiodev">
+									<div class="studiodev__img">
+										<img src="img/footer/logodev.svg" alt="Галактика">
+									</div>
+									<span class="studiodev__text">Создание сайта — студия «Галактика»</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230712102312"></script>
+</body>
+
+</html>
